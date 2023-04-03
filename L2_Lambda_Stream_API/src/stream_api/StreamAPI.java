@@ -20,8 +20,8 @@ public class StreamAPI {
 
         // filter - contains number 1
         List<String> resultFilter = values.stream()
-                .filter(value -> value.contains("1"))
-                .collect(Collectors.toList());
+            .filter(value -> value.contains("1"))
+            .collect(Collectors.toList());
         System.out.println(resultFilter); /** [a11, a11, ki1] */
 
         // skip
