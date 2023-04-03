@@ -31,8 +31,8 @@ public class StreamAPITask {
         // return sorted by age, name, address
         List<Person> sortedPersons = persons.stream()
                 .sorted(Comparator.comparing(Person::getAge)
-                        .thenComparing(Person::getName)
-                        .thenComparing(Person::getAddress))
+                .thenComparing(Person::getName)
+                .thenComparing(Person::getAddress))
                 .collect(Collectors.toList());
         System.out.println(sortedPersons);
 
