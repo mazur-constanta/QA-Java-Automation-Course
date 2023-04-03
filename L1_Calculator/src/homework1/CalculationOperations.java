@@ -98,6 +98,7 @@ public class CalculationOperations {
 
     public char chooseOperation() {
         System.out.println("Enter some operator:");
+
         operation = scanner.next().charAt(0);
 
         List<Character> validCharacters = List.of('+', '-', '*', '/');
@@ -105,7 +106,7 @@ public class CalculationOperations {
         boolean notValidCharacters = !(validCharacters.contains(operation));
 
         if (notValidCharacters) {
-            throw new NoSuchElementException("Choose valid operation: +, -, *, /. You cannot use letters.");
+            throw new NoSuchElementException("Choose valid operation: +, -, *, /. You cannot use letters or special symbols.");
         }
         return operation;
     }
