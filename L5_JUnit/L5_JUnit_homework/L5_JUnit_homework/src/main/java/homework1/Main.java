@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
         CalculationOperations calculationOperations = new CalculationOperations();
 
-        calculationOperations.performCalculation();
+        System.out.println(calculationOperations.performCalculation());
     }
 
 }

@@ -43,19 +43,19 @@ public class CalculationOperations {
         this.operation = operation;
     }
 
-    private double sum(double firstNum, double secondNum) {
+    public double sum(double firstNum, double secondNum) {
         return firstNum + secondNum;
     }
 
-    private double minus(double firstNum, double secondNum) {
+    public double minus(double firstNum, double secondNum) {
         return firstNum - secondNum;
     }
 
-    private double multiply(double firstNum, double secondNum) {
+    public double multiply(double firstNum, double secondNum) {
         return firstNum * secondNum;
     }
 
-    private double divide(double firstNum, double secondNum) {
+    public double divide(double firstNum, double secondNum) {
         boolean notValidSecondVal = secondNum == 0;
 
         if (notValidSecondVal) {
@@ -64,7 +64,7 @@ public class CalculationOperations {
         return result = firstNum / secondNum;
     }
 
-    public void performCalculation() {
+    public String performCalculation() {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
@@ -107,6 +107,7 @@ public class CalculationOperations {
                 break;
             }
         }
+        return "End of program";
     }
 
 
