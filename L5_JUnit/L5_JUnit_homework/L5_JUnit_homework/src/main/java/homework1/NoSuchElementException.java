@@ -8,4 +8,5 @@ public class NoSuchElementException extends ArithmeticException {
     public NoSuchElementException(String s) {
         super(s);
     }
+
 }

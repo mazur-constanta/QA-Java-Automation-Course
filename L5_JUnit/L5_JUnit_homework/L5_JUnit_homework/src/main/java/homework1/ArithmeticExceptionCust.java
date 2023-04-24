@@ -8,4 +8,5 @@ public class ArithmeticExceptionCust extends ArithmeticException {
     public ArithmeticExceptionCust(String s) {
         super(s);
     }
+
 }
