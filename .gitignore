@@ -1,0 +1,32 @@
+# Compiled class files
+*.class
+
+# Logs and Reports
+logs/
+test-output/
+
+# Maven build directory
+target/
+
+# Gradle build directory
+build/
+
+# IntelliJ IDEA
+.idea/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# NetBeans
+nbproject/private/
+
+# Mac files
+.DS_Store
+
+# Windows Thumbnail Cache
+Thumbs.db
+
+# Ignore your own custom files or directories
+custom_file_or_directory/
