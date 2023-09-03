@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite 1" parallel="tests">
+    <test name="Example test 1" parallel="classes">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="org.example.test_ex.Test1">
+                <methods>
+                    <include name="testPrintName"/>
+                </methods>
+            </class>
+            <class name="org.example.test_ex.Test2">
+                <methods>
+                    <include name="testPrintName2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Example test 2" parallel="classes">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="org.example.test_ex.IgnoreTest">
+                <methods>
+                    <include name="testSetPropertyIgnored"/>
+                    <include name="testSetPropertyEnabledMethod"/>
+                </methods>
+            </class>
+            <class name="org.example.test_ex.TestExpectedExceptionTest">
+                <methods>
+                    <include name="testNullPointerExpection"/>
+                </methods>
+            </class>
+            <class name="org.example.test_ex.TimeOutTest">
+                <methods>
+                    <include name="waitLongTime"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Data Provider Test">
+        <classes>
+            <class name="org.example.test_ex.DataProviderTest">
+                <methods>
+                    <include name="testStudentNames"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
