@@ -1,0 +1,47 @@
+﻿По Git/GitHub:
+- git init - гит следить за конкретной папкой (cmd + shidt + .dot)
+- cmazur@MacBook-Air-Constanta project_1 % git config --global user.name "Constanta"
+- cmazur@MacBook-Air-Constanta project_1 % git config --global user.email ifcmazur@gmail.com
+
+- git status  - проверить статус (Untracked in red)
+- 3 cостояния файлов репозитория: 1.   Файлы просто созданы и всё 2. Гит следит за определенными файлам (попадают в индекс) 3. Создание контрольной точки, кормит
+- git add -A
+- git status (Already tracked in green)
+- git commit -a -m"Checked data types, basics"
+- git log  - изменения кем и когда
+- git remote add origin https://github.com/constancegerman/JS_basics.git
+- git push -u origin master
+
+Клонировать на другой комп:
+На сайте гитхаб скопировать HTTPS путь
+cd..
+cd work
+git clone https://github.com/constancegerman/JS_basics.git project_2 (название папки новой на рабочем компе)
+git add -A
+git commit -a -m"index.html small change"
+git push
+git pull - to add the change from the remote repository to personal pc
+
+git restore --staged (чтобы убрать из отслеживаемых)
+git clean -f (сделать общую чистку)
+
+Merge работа
+git branch (проверка, что мы на главной ветке)
+git branch -D lesson_2 (для удаления уже ненужной ветки)
+git branch lesson_3 (создаем новую ветку)
+git switch lesson_3 (переключаемся на новую ветку локальную)
+git branch (проверка, что мы на новой ветке)
+git status  - проверить статус (Untracked in red)
+git add L3_Theory_homework/ (добавили новый в staged)
+git status  - проверить статус (Tracked in green)
+git commit -m"added theory lesson 3" (добавляем коммит)
+git switch main (возвращаемся на главную локальную ветку)
+git branch (проверка, что мы на главной ветке)
+git push origin lesson_3 (отправляем изменения на удаленный репазиторий)
+ЗАХОДИМ НА УДАЛЕННЫЙ РЕПАЗИТОРИЙ
+Чекаем таб Pull Requests
+Compare & pull
+Create pull request
+Merge pull request
+Confirm merge
+Удаляем ненужные бренчи с локального и удаленного репозитория
