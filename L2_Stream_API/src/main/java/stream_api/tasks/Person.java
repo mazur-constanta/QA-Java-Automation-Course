@@ -1,4 +1,4 @@
-package stream_api.practice.task1;
+package stream_api.tasks;
 
 public class Person {
     private String name;

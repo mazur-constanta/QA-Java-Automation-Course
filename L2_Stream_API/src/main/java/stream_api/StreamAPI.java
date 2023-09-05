@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-//import java.util.stream;
 
 public class StreamAPI {
     public static void main(String[] args) {
@@ -20,8 +19,8 @@ public class StreamAPI {
 
         // filter - contains number 1
         List<String> resultFilter = values.stream()
-            .filter(value -> value.contains("1"))
-            .collect(Collectors.toList());
+                .filter(value -> value.contains("1"))
+                .collect(Collectors.toList());
         System.out.println(resultFilter); /** [a11, a11, ki1] */
 
         // skip
@@ -75,11 +74,11 @@ public class StreamAPI {
 //                .mapToInt(Integer::parseInt)
                 .mapToDouble(Double::parseDouble)
                 .forEach(System.out::println);
-                /**1.0
-                2.0
-                3.0
-                4.0
-                5.0*/
+        /**1.0
+         2.0
+         3.0
+         4.0
+         5.0*/
 //        System.out.println(strings);
 
         // flatMap

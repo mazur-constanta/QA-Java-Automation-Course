@@ -1,6 +1,4 @@
-package stream_api.practice.task1;
-
-import stream_api.practice.task1.Person;
+package stream_api.tasks;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -11,11 +9,11 @@ public class StreamAPITask {
 
     private static List<Person> initPersons() {
         return Arrays.asList(
-            new Person("Alex", 16, ""),
-            new Person("Oleg", 16, "Lidl"),
-            new Person("Kate", 25, "Vilnus"),
-            new Person("Mike", 45, "Berlin"),
-            new Person("Liza", 29, "Grodno")
+                new Person("Alex", 16, ""),
+                new Person("Oleg", 16, "Lidl"),
+                new Person("Kate", 25, "Vilnus"),
+                new Person("Mike", 45, "Berlin"),
+                new Person("Liza", 29, "Grodno")
         );
     }
 
@@ -31,8 +29,8 @@ public class StreamAPITask {
         // return sorted by age, name, address
         List<Person> sortedPersons = persons.stream()
                 .sorted(Comparator.comparing(Person::getAge)
-                .thenComparing(Person::getName)
-                .thenComparing(Person::getAddress))
+                        .thenComparing(Person::getName)
+                        .thenComparing(Person::getAddress))
                 .collect(Collectors.toList());
         System.out.println(sortedPersons);
 
