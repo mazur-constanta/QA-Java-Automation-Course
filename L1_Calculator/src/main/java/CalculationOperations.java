@@ -1,7 +1,6 @@
-package homework1;
-
 import java.util.InputMismatchException;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class CalculationOperations {
