@@ -7,7 +7,7 @@ import static query_executor.DeveloperQueryExecutor.*;
 
 public class ApplicationDB {
     private static final String DATA_BASE_URL =
-            "jdbc:sqlite:" + "/Users/cmazur/QA Java Automation Course/L8_JDBC/L8_JDBC_Connection/src/main/resources/developers.db";
+            "jdbc:sqlite:" + "/Users/cmazur/QA Java Automation Course/L8_JDBC_Connection/src/main/resources/developers.db";
 
     public static void main(String[] args) throws SQLException {
         if(isDriverExists()) {
