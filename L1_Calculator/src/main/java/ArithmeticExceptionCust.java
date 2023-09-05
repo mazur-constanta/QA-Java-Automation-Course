@@ -1,5 +1,3 @@
-package homework1;
-
 public class ArithmeticExceptionCust extends ArithmeticException {
     public ArithmeticExceptionCust() {
         super();

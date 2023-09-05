@@ -1,5 +1,3 @@
-package homework1;
-
 public class NoSuchElementException extends ArithmeticException {
     public NoSuchElementException() {
         super();
