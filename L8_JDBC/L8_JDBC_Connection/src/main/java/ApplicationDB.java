@@ -35,6 +35,8 @@ public class ApplicationDB {
                         int idForUpdate = new Scanner(System.in).nextInt();
                         updateDeveloper(connection, idForUpdate, DeveloperService.inputDeveloper());
                         break;
+                    case "5":
+                        break;
                 }
             } while(!"5".equals(action));
             connection.close();
