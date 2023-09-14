@@ -3,7 +3,7 @@ package org.example;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -13,8 +13,8 @@ public class WebDriverDemoTest {
     public void initDriver() throws InterruptedException {
 //        System.setProperty("webdriver.chrome.driver", "/Users/cmazur/QA Java Automation Course/L11_Selenium/src/main/resources/chromedriver");
 
-//        WebDriver driver = new FirefoxDriver();
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new FirefoxDriver();
+//        WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
 //        driver.get("https://webdriveruniversity.com/");
@@ -41,7 +41,7 @@ public class WebDriverDemoTest {
         driver.navigate().forward();
         Thread.sleep(2000);
         driver.navigate().refresh();
-//        driver.quit();
-        driver.close();
+        driver.quit();
+//        driver.close();
     }
 }
