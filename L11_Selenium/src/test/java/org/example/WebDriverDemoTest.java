@@ -11,8 +11,9 @@ import java.util.List;
 public class WebDriverDemoTest {
     @Test
     public void initDriver() throws InterruptedException {
-        //System.setProperty("webdriver.chrome.driver", "/Users/cmazur/QA Java Automation Course/L11_Selenium/src/main/resources/chromedriver");
+//        System.setProperty("webdriver.chrome.driver", "/Users/cmazur/QA Java Automation Course/L11_Selenium/src/main/resources/chromedriver");
 
+//        WebDriver driver = new FirefoxDriver();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
